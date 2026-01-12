@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="bgFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="mini_btn">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="close_btn">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QFrame" name="left_frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>191</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pay_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string> 生活缴费</string>
+      </property>
+      <property name="icon">
+       <iconset resource="picture.qrc">
+        <normaloff>:/image/image/pay.png</normaloff>:/image/image/pay.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="home_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>    主页</string>
+      </property>
+      <property name="icon">
+       <iconset resource="picture.qrc">
+        <normaloff>:/image/image/home.png</normaloff>:/image/image/home.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeatDelay">
+       <number>300</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="money_lb">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>35</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>余额：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="name_lb">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>15</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>yejisu</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="notes_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string> 缴费记录</string>
+      </property>
+      <property name="icon">
+       <iconset resource="picture.qrc">
+        <normaloff>:/image/image/notes.png</normaloff>:/image/image/notes.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="report_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string> 报修投诉</string>
+      </property>
+      <property name="icon">
+       <iconset resource="picture.qrc">
+        <normaloff>:/image/image/report.png</normaloff>:/image/image/report.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="personal_btn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>330</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string> 个人中心</string>
+      </property>
+      <property name="icon">
+       <iconset resource="picture.qrc">
+        <normaloff>:/image/image/personal.png</normaloff>:/image/image/personal.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="notice_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>385</y>
+        <width>191</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="notice_lb">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>最新公告</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="notice_list">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="avatar_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>15</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="balance_lb">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>35</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>206</x>
+       <y>130</y>
+       <width>550</width>
+       <height>590</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_home">
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>0</y>
+         <width>291</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/image/image/yeji.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>440</y>
+         <width>271</width>
+         <height>135</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/image/image/yuna.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>271</width>
+         <height>135</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/image/image/chaeryeong.jpg);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>153</y>
+         <width>271</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/image/image/ryujin.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>153</y>
+         <width>271</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/image/image/lia.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_pay">
+      <widget class="QPushButton" name="payAll_btn">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>70</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>一键缴费</string>
+       </property>
+      </widget>
+      <widget class="DashboardCard" name="elect_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>130</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="electPay_btn">
+        <property name="geometry">
+         <rect>
+          <x>188</x>
+          <y>6</y>
+          <width>70</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择缴费</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="DashboardCard" name="water_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>130</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="waterPay_btn">
+        <property name="geometry">
+         <rect>
+          <x>188</x>
+          <y>6</y>
+          <width>70</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择缴费</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="DashboardCard" name="gas_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>280</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="gasPay_btn">
+        <property name="geometry">
+         <rect>
+          <x>188</x>
+          <y>6</y>
+          <width>70</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择缴费</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="DashboardCard" name="heating_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>280</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="DashboardCard" name="parking_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>430</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="parkPay_btn">
+        <property name="geometry">
+         <rect>
+          <x>188</x>
+          <y>55</y>
+          <width>70</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择缴费</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="DashboardCard" name="property_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>430</y>
+         <width>265</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="propertyPay_btn">
+        <property name="geometry">
+         <rect>
+          <x>188</x>
+          <y>55</y>
+          <width>70</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择缴费</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_notes">
+      <widget class="HistoryListWidget" name="payment_widget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>550</width>
+         <height>590</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_report">
+      <widget class="HistoryListWidget" name="report_widget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>310</y>
+         <width>550</width>
+         <height>280</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="ReportWidget" name="rpt_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>550</width>
+         <height>300</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_personal">
+      <widget class="QPushButton" name="changeAvatar_btn">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>95</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>更换头像</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="avatar_btn1">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="saveChange_btn">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>520</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>保存修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cancel_btn">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>520</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="username_edit2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>180</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="realname_edit2">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>180</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="man_rb">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>250</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>男</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="woman_rb">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>250</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>女</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="phone_edit2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>250</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="building">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>320</y>
+         <width>125</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>翻斗花园-1号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-2号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-3号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-5号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-6号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-7号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-8号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-9号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-10号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-11号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-12号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-13号楼</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>翻斗花园-16号楼</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QSpinBox" name="floor">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>320</y>
+         <width>21</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="logOut_btn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>520</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>退出登录</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>180</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>用户名：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>250</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>手机号：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>180</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>真实姓名：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>250</y>
+         <width>36</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>性别：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>320</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>楼   栋：</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="houseNum">
+       <property name="geometry">
+        <rect>
+         <x>429</x>
+         <y>320</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="maximum">
+        <number>10000</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>320</y>
+         <width>36</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>楼层：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>320</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>门牌号：</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="chat_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>769</x>
+       <y>45</y>
+       <width>232</width>
+       <height>675</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <widget class="QPushButton" name="send_btn">
+      <property name="geometry">
+       <rect>
+        <x>186</x>
+        <y>620</y>
+        <width>43</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="sendMsg_Edit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>620</y>
+        <width>186</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>231</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="fandou_lb">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>翻斗花园业主聊天室</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="chatRoom_widget">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="title_lb">
+     <property name="geometry">
+      <rect>
+       <x>202</x>
+       <y>20</y>
+       <width>561</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dark_light_btn">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>10</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HistoryListWidget</class>
+   <extends>QListWidget</extends>
+   <header>historylistwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ReportWidget</class>
+   <extends>QWidget</extends>
+   <header>reportwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DashboardCard</class>
+   <extends>QWidget</extends>
+   <header>dashboardcard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>send_btn</tabstop>
+  <tabstop>close_btn</tabstop>
+  <tabstop>pay_btn</tabstop>
+  <tabstop>home_btn</tabstop>
+  <tabstop>notes_btn</tabstop>
+  <tabstop>report_btn</tabstop>
+  <tabstop>personal_btn</tabstop>
+  <tabstop>notice_list</tabstop>
+  <tabstop>avatar_btn</tabstop>
+  <tabstop>payAll_btn</tabstop>
+  <tabstop>electPay_btn</tabstop>
+  <tabstop>waterPay_btn</tabstop>
+  <tabstop>gasPay_btn</tabstop>
+  <tabstop>parkPay_btn</tabstop>
+  <tabstop>propertyPay_btn</tabstop>
+  <tabstop>payment_widget</tabstop>
+  <tabstop>report_widget</tabstop>
+  <tabstop>changeAvatar_btn</tabstop>
+  <tabstop>avatar_btn1</tabstop>
+  <tabstop>saveChange_btn</tabstop>
+  <tabstop>cancel_btn</tabstop>
+  <tabstop>username_edit2</tabstop>
+  <tabstop>realname_edit2</tabstop>
+  <tabstop>man_rb</tabstop>
+  <tabstop>woman_rb</tabstop>
+  <tabstop>phone_edit2</tabstop>
+  <tabstop>building</tabstop>
+  <tabstop>floor</tabstop>
+  <tabstop>logOut_btn</tabstop>
+  <tabstop>houseNum</tabstop>
+  <tabstop>mini_btn</tabstop>
+  <tabstop>sendMsg_Edit</tabstop>
+  <tabstop>chatRoom_widget</tabstop>
+  <tabstop>dark_light_btn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="picture.qrc"/>
+ </resources>
+ <connections/>
+</ui>

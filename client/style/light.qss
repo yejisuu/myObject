@@ -1,0 +1,588 @@
+/*----------------------------登录界面---------------------------------*/  前面这部分登录的没改，但是好像没啥影响，就不改了
+QPushButton#login_again_btn0,
+QPushButton#login_again_btn1,
+QPushButton#login_btn{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ff6b35, stop:1 #f7931e);
+}
+QPushButton#login_again_btn0:hover,
+QPushButton#login_again_btn1:hover,
+QPushButton#login_btn:hover{
+    background-color: #fa931e;
+}
+QPushButton#login_again_btn0:pressed,
+QPushButton#login_again_btn1:pressed,
+QPushButton#login_btn:pressed{
+    background-color: #ff6b35;
+}
+QPushButton#root_login_btn{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #134e5e, stop:1 #71b280);
+    border: 1px solid #2c5364;
+}
+QPushButton#root_login_btn:hover{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #246d82, stop:1 #8cd99d);
+}
+QPushButton#root_login_btn:pressed{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0b2d36, stop:1 #4c7855);
+}
+
+QPushButton#change_btn,
+QPushButton#return_btn,
+QPushButton#return_btn1,
+QPushButton#exit_btn0,
+QPushButton#exit_btn1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    background-color: #707070;
+}
+QPushButton#return_btn:hover,
+QPushButton#return_btn1:hover,
+QPushButton#exit_btn0:hover,
+QPushButton#exit_btn1:hover {
+    background-color: #555555;
+    border: 1px solid #999999;
+}
+QPushButton#return_btn:pressed,
+QPushButton#return_btn1:pressed,
+QPushButton#exit_btn0:pressed,
+QPushButton#exit_btn1:pressed {
+    background-color: #444444;
+}
+
+QPushButton#change_btn,
+QPushButton#retrieve_btn,
+QPushButton#register_btn{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f7931e;
+}
+
+QPushButton#retrieve_btn:disabled,
+QPushButton#register_btn:disabled{
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    background-color: #707070;
+}
+
+/* 输入框 */
+QLineEdit {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid #555555;
+    color: white;
+    font-size: 14px;
+}
+
+QLineEdit#again_edit:focus,
+QLineEdit#newPwd_edit:focus,
+QLineEdit#phone_edit1:focus,
+QLineEdit#realname_edit1:focus,
+QLineEdit#username_edit1:focus,
+QLineEdit#phone_edit:focus,
+QLineEdit#realname_edit:focus,
+QLineEdit#password_edit:focus,
+QLineEdit#username_edit:focus,
+QLineEdit#userName_edit:focus,
+QLineEdit#userPwd_edit:focus {
+    border: 1px solid #ff6b35;
+}
+QLineEdit#rootName_edit:focus,
+QLineEdit#rootPwd_edit:focus {
+    border: 1px solid #cccccc;
+}
+QLineEdit#again_edit:focus,
+QLineEdit#newPwd_edit:focus,
+QLineEdit#phone_edit1:hover,
+QLineEdit#realname_edit1:hover,
+QLineEdit#username_edit1:hover,
+QLineEdit#phone_edit:hover,
+QLineEdit#realname_edit:hover,
+QLineEdit#password_edit:hover,
+QLineEdit#username_edit:hover {
+    background-color: #2B2B2B;
+}
+
+/* 选择框 */
+QCheckBox{
+    color: #555555;
+    font: 10pt "Microsoft YaHei UI";
+    outline: none;
+}
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #555555;
+    border-radius: 3px;
+    margin: 1px;
+}
+QCheckBox::indicator:hover {
+    border: 2px solid #888888;
+    margin: 0px;
+}
+QCheckBox:hover {
+    color: #EEEEEE;
+}
+QCheckBox::indicator:checked {
+    image: url(:/image/image/check.png);
+}
+QCheckBox::indicator:pressed {
+    border: 1px solid #555555;
+}
+QCheckBox:pressed {
+    color: #555555;
+    margin: 1px;
+}
+
+/* 缩小和关闭 */
+QPushButton#close_btn1,
+QPushButton#close_btn {
+    image: url(:/image/image/close.png);
+    border: none;
+}
+QPushButton#close_btn1:hover,
+QPushButton#close_btn:hover {
+    image: url(:/image/image/hover_close.png);
+}
+QPushButton#close_btn1:pressed,
+QPushButton#close_btn:pressed {
+    image: url(:/image/image/pressed_close.png);
+}
+QPushButton#mini_btn {
+    image: url(:/image/image/mini.png);
+    border: none;
+}
+QPushButton#mini_btn:hover {
+    image: url(:/image/image/hover_mini.png);
+}
+QPushButton#mini_btn:pressed {
+    image: url(:/image/image/pressed_mini.png);
+}
+
+/* 分割线 */
+QFrame#line {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 1px;
+}
+
+/* label */
+QLabel[styleType="link"] {
+    color: #555555;
+}
+QLabel[styleType="link"]:hover {
+    color: #FFFFFF;
+}
+QLabel[styleType="text"] {
+    color: white;
+}
+QFrame#retrieve_frame,
+QFrame#register_frame {
+    background-color: #111111;
+    border-radius: 10px;
+    border: 1px solid #aaaaaa;
+}
+/*----------------------------登录界面---------------------------------*/
+
+
+/*---------主界面-----------*/
+QFrame#bgFrame {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                                      stop:0   rgba(255, 255, 255, 6), /* 极亮 */
+                                      stop:0.3 rgba(255, 255, 255, 10),  /* 迅速变透 */
+                                      stop:1   rgba(255, 255, 255, 5)); /* 露出背景 */
+
+    /* 边框最亮，强调主体地位 */
+    border: 1px solid rgba(255, 255, 255, 200);
+    border-radius: 20px;
+}
+
+QPushButton#dark_light_btn {
+    background-color: transparent;
+    image: url(:/image/image/light_dark.png);
+}
+
+/* ----------------------------左侧界面------------------------------------- */
+QFrame#left_frame {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                      stop:0   rgba(255, 255, 255, 40),
+                                      stop:1   rgba(255, 255, 255, 5));
+
+    /* 边框稍微淡一点，不要抢中间的风头 */
+    border: 1px solid rgba(255, 255, 255, 120);
+    border-radius: 20px;
+}
+
+QPushButton#avatar_btn {
+    border: none;
+    background-color: transparent;
+}
+
+QPushButton#personal_btn,
+QPushButton#report_btn,
+QPushButton#notes_btn,
+QPushButton#pay_btn,
+QPushButton#home_btn {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font: 12pt "Microsoft YaHei UI";
+    text-align: left;
+    padding-left: 30px;
+    height: 45px;           /* 按钮高度适中 */
+    border-radius: 10px;
+    margin: 2px 12px;
+}
+QPushButton#personal_btn:hover,
+QPushButton#report_btn:hover,
+QPushButton#notes_btn:hover,
+QPushButton#pay_btn:hover,
+QPushButton#home_btn:hover {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 200);
+    border-radius: 10px;
+}
+QPushButton#personal_btn:checked,
+QPushButton#report_btn:checked,
+QPushButton#notes_btn:checked,
+QPushButton#pay_btn:checked,
+QPushButton#home_btn:checked {
+    background-color: rgba(255, 255, 255, 100);
+    padding-left: 26px;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+    border-radius: 10px;
+}
+
+QFrame#result_frame {
+    color: #eeeeee;
+    background-color: rgba(33, 33, 33, 0.9);
+    border-radius: 8px;
+    border: 1px solid rgba(178, 34, 34, 1);
+}
+QFrame#notice_frame {
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                                      stop:0   rgba(255, 255, 255, 160),
+                                      stop:0.1 rgba(255, 255, 255, 60),
+                                      stop:1   rgba(255, 255, 255, 10));
+
+    /* 2. 边框：必须亮且清晰 */
+    /* 模拟玻璃切面的反光，一定要比背景亮 */
+    border: 1px solid rgba(255, 255, 255, 180);
+
+    /* 3. 圆角 */
+    border-radius: 12px;
+
+    /* 4. 内边距 (可选，防止内容贴边) */
+    margin: 10px;
+}
+
+QFrame#notice_frame QLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+
+    /* 下边框作为分割线 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 8px; /* 字离线远一点 */
+    margin-bottom: 5px;  /* 线离下面的列表远一点 */
+}
+
+QListWidget#notice_list {
+    background-color: transparent; /* 透明，透出外壳的颜色 */
+    border: none;
+    outline: none; /* 去掉选中虚线 */
+    qproperty-iconSize: 20px 20px;
+}
+QListWidget#notice_list::item {
+    height: 36px; /* 高度适中 */
+    width: 140px;
+    color: #ffffff;
+    padding-left: 5px;
+    border-radius: 6px; /* 每一行也有小圆角 */
+}
+QListWidget#notice_list::item:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* 微微发亮 */
+    color: white;
+}
+QListWidget#notice_list::item:selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+/* ----------------------------左侧界面------------------------------------- */
+
+/*---------------------------公告框--------------------------------------*/
+
+QLabel#title_lb {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 25px;             /* 增加内边距 */
+    border-bottom: 1px solid #E5E7EB; /* 底部细分割线 */
+}
+QTextBrowser#notice_tb {
+    background-color: transparent;
+    border: none;                   /* 核心：去掉边框 */
+    color: #000000;                 /* 正文灰黑 */
+    font-size: 18px;
+    padding: 20px 25px;             /* 保持对齐 */
+}
+QLabel#sendPeople_lb {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+QLabel#sendTime_lb {
+    color: #ffffff;                 /* 浅灰色 */
+    font-size: 12px;
+    padding-left: 10px;             /* 和左边拉开点距离 */
+}
+QFrame#noticeFrame {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                                      stop:0   rgba(255, 255, 255, 80), /* 极亮 */
+                                      stop:0.2 rgba(255, 255, 255, 80),  /* 迅速变透 */
+                                      stop:1   rgba(255, 255, 255, 20)); /* 露出背景 */
+
+    /* 边框最亮，强调主体地位 */
+    border: 1px solid rgba(255, 255, 255, 200);
+    border-radius: 20px;
+}
+
+/*---------------------------公告框--------------------------------------*/
+
+/*---------------------------------------中间界面-----------------------------------------------*/
+QWidget#page_home,
+QWidget#page_notes,
+QWidget#page_report,
+QWidget#page_personal {
+    background-color: rgba(155, 155, 155, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+QWidget#page_personal QLabel {
+    color: #eeeeee;       /* 深灰色，比纯黑柔和 */
+    font-family: "Microsoft YaHei", "Segoe UI";
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+}
+
+QWidget#page_personal QLineEdit,
+QWidget#page_personal QSpinBox {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #BBBBBB; /* 只留底下一条灰线 */
+    color: #eeeeee;               /* 输入文字颜色 */
+    font-size: 14px;
+    padding: 2px 0px;             /* 上下留点空隙 */
+    selection-background-color: #007ACC;
+    height: 45px;
+}
+
+QWidget#page_personal QLineEdit:hover,
+QWidget#page_personal QSpinBox:hover {
+    border-bottom: 1px solid #ffffff;
+}
+/*---------------------------个人中心--------------------------------------*/
+QPushButton#payAll_btn,
+QPushButton#toReport_btn,
+QPushButton#toComplaint_btn,
+QPushButton#cancel_btn,
+QPushButton#logOut_btn,
+QPushButton#changeAvatar_btn,
+QPushButton#saveChange_btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 1.0);
+    color: #000000;
+    font: 10pt "Microsoft YaHei UI";
+    border-radius: 6px;
+}
+QPushButton#payAll_btn:hover,
+QPushButton#toReport_btn:hover,
+QPushButton#toComplaint_btn:hover,
+QPushButton#cancel_btn:hover,
+QPushButton#logOut_btn:hover,
+QPushButton#changeAvatar_btn:hover,
+QPushButton#saveChange_btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+QPushButton#payAll_btn:pressed,
+QPushButton#toReport_btn:pressed,
+QPushButton#toComplaint_btn:pressed,
+QPushButton#cancel_btn:pressed,
+QPushButton#logOut_btn:pressed,
+QPushButton#changeAvatar_btn:pressed,
+QPushButton#saveChange_btn:pressed {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+QWidget#page_personal QLineEdit[readOnly="true"] {
+    color: #cccccc;
+    border-bottom: 0px solid #BBBBBB;
+}
+
+QPushButton#avatar_btn1 {
+    background-color: rgba(255, 255, 255, 100);  /* 半透明背景 */
+    border: 3px solid #eeeeee;
+    border-radius: 6px;
+}
+QWidget#page_personal QRadioButton{
+    color: #ffffff;
+    font: 10pt "Microsoft YaHei UI";
+}
+
+QWidget#page_personal QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    border: 1px solid #999999;
+    background: transparent;
+
+}
+
+QWidget#page_personal QRadioButton::indicator:hover {
+    border: 1px solid #ffffff;
+}
+
+QWidget#page_personal QRadioButton::indicator:checked {
+    /* 修正尺寸：让内圆居中 */
+    width: 8px;
+    height: 8px;
+
+    /* 关键：边框不要用实色，用带一点点透明的蓝，更有玻璃感 */
+    border: 4px solid rgba(247, 147, 30, 0.85);
+
+    /* 中心留白，或者用全透明让它透出玻璃背景 */
+    background-color: transparent;
+}
+
+QComboBox {
+    /* 背景：深色半透明 */
+    background-color: transparent;
+    /* 边框：细微白线 */
+    border: 1px solid rgba(255, 255, 255, 40);
+
+    /* 字体与内边距 */
+    color: #eeeeee;
+    font-size: 14px;
+}
+
+/* 鼠标悬停 */
+QComboBox:hover {
+    background-color: rgba(255, 255, 255, 60);
+    border: 1px solid rgba(255, 255, 255, 80);
+}
+
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+QComboBox::down-arrow {
+    image: url(:/image/image/dropdown.png);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+QComboBox QAbstractItemView {
+    /* 背景：必须是深色，这里不能太透，否则会看见下面的字，这就乱了 */
+    /* 推荐用纯黑或极深灰色，带一点点透即可 */
+    background-color: rgba(30, 36, 39, 200);
+
+    /* 边框 */
+    border: 1px solid #eeeeee;
+    border-radius: 0px 0px 6px 6px; /* 下方圆角 */
+
+    /* 字体 */
+    color: #dddddd;
+    selection-background-color: rgba(64, 158, 255, 100); /* 选中项背景 */
+    selection-color: white;                               /* 选中项文字 */
+    outline: none; /* 去掉虚线框 */
+}
+
+/* 列表项的高度和样式 */
+QComboBox QAbstractItemView::item {
+    height: 25px; /* 让选项高一点，好点 */
+    color: #dddddd;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+
+/* 鼠标滑过某一项 */
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgba(255, 255, 255, 60);
+    color: white;
+}
+
+/*---------------------------个人中心--------------------------------------*/
+
+/*---------------------------缴费界面----------------------------*/
+QWidget#water_widget,
+QWidget#elect_widget,
+QWidget#gas_widget,
+QWidget#property_widget,
+QWidget#parking_widget,
+QWidget#heating_widget {
+    /* 背景核心：线性渐变 (Linear Gradient)
+       从左上角(0,0) 到 右下角(1,1)
+       颜色：白色(255,255,255)
+       stop:0 (左上角) 透明度 120 (约45%) -> 比较亮
+       stop:1 (右下角) 透明度 50  (约20%) -> 比较透
+       这样能制造出一种光是从左上角打下来的感觉
+    */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 100), stop:1 rgba(255, 255, 255, 30));
+    border: 1px solid rgba(255, 255, 255, 130);
+    border-radius: 16px;
+}
+QWidget#water_widget:hover,
+QWidget#elect_widget:hover,
+QWidget#gas_widget:hover,
+QWidget#property_widget:hover,
+QWidget#parking_widget:hover,
+QWidget#heating_widget:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 130), stop:1 rgba(255, 255, 255, 50));
+    border: 1px solid rgba(255, 255, 255, 180);
+}
+/*---------------------------缴费界面----------------------------*/
+
+
+
+
+/*---------------------------中间界面--------------------------------------*/
+
+/*---------------------------聊天室界面--------------------------------------*/
+
+QWidget#chat_widget {
+    background-color: rgba(255, 255, 255, 20);
+    border: 1px solid rgba(255, 255, 255, 30); /* 细白边 */
+    border-radius: 20px; /* 大圆角 */
+}
+
+
+
+
+/*---------------------------聊天室界面--------------------------------------*/

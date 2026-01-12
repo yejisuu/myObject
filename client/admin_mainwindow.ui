@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin_MainWindow</class>
+ <widget class="QMainWindow" name="Admin_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>836</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,1">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>待处理事务</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="HistoryListWidget" name="pending_widget">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>255</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>发布公告</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="title_edit">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>255</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="content_edit">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>255</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="level3_rb">
+          <property name="text">
+           <string>紧急</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="level2_rb">
+          <property name="text">
+           <string>重要</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="level1_rb">
+          <property name="text">
+           <string>普通</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="sender_edit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="send_btn">
+          <property name="text">
+           <string>发布</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="minimumSize">
+       <size>
+        <width>4</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 9pt &quot;Microsoft YaHei UI&quot;;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,30">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>小区居民信息</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="userInfo_Widget">
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HistoryListWidget</class>
+   <extends>QListWidget</extends>
+   <header>historylistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

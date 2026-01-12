@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/check.png</file>
+        <file>image/hover_root.png</file>
+        <file>image/pressed_root.png</file>
+        <file>image/hover_user.png</file>
+        <file>image/pressed_user.png</file>
+        <file>image/pressed_close.png</file>
+        <file>image/hover_close.png</file>
+        <file>image/pressed_mini.png</file>
+        <file>image/hover_mini.png</file>
+        <file>image/close.png</file>
+        <file>image/mini.png</file>
+        <file>image/yeji.jpg</file>
+        <file>image/home.png</file>
+        <file>image/home_choose.png</file>
+        <file>image/notes.png</file>
+        <file>image/pay.png</file>
+        <file>image/personal.png</file>
+        <file>image/report.png</file>
+        <file>image/default_avatar.png</file>
+        <file>image/dropdown.png</file>
+        <file>image/add.png</file>
+        <file>image/del.png</file>
+        <file>image/no_del.png</file>
+        <file>image/g_star.png</file>
+        <file>image/o_star.png</file>
+        <file>image/r_star.png</file>
+        <file>image/w_star.png</file>
+        <file>image/y_star.png</file>
+        <file>image/l_star.png</file>
+        <file>image/send.png</file>
+        <file>image/title.jpg</file>
+        <file>image/dark_light.png</file>
+        <file>image/light_dark.png</file>
+        <file>image/wechatQr.jpg</file>
+        <file>image/zfbQr.jpg</file>
+        <file>image/null_image.png</file>
+        <file>image/private_send.png</file>
+        <file>image/loading.gif</file>
+        <file>image/mainIcon.png</file>
+        <file>image/chaeryeong.jpg</file>
+        <file>image/lia.jpg</file>
+        <file>image/ryujin.jpg</file>
+        <file>image/yuna.jpg</file>
+    </qresource>
+</RCC>

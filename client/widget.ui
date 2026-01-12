@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="Chinese" country="China"/>
+  </property>
+  <widget class="QFrame" name="login_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="SYS_lb">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>260</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;Microsoft YaHei UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>居民缴费管理系统</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mini_btn">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_btn">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="masterStack">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>120</y>
+      <width>220</width>
+      <height>220</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="loginPage">
+     <widget class="QStackedWidget" name="L_stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>220</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="userPage">
+       <widget class="QCheckBox" name="auto_login_checkBox">
+        <property name="geometry">
+         <rect>
+          <x>125</x>
+          <y>110</y>
+          <width>91</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>自动登录</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="rember_pwd_checkBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>91</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>记住密码</string>
+        </property>
+       </widget>
+       <widget class="clickablelabel" name="register_user_lb0">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>190</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>注册用户</string>
+        </property>
+       </widget>
+       <widget class="clickablelabel" name="findPwd_lb">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>190</y>
+          <width>70</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>忘记密码</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>109</x>
+          <y>190</y>
+          <width>2</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="userName_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="userPwd_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="login_btn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>登 录</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="rootPage">
+       <widget class="QLineEdit" name="rootName_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="rootPwd_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="root_login_btn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>198</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>进入管理员后台</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="errorPage">
+     <widget class="QStackedWidget" name="E_stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>220</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="noUserPage">
+       <widget class="QLabel" name="errorText_lb0">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>0</y>
+          <width>190</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Microsoft YaHei UI&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>error</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="login_again_btn0">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>90</y>
+          <width>198</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>重新登录</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="exit_btn0">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>140</y>
+          <width>198</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+       <widget class="clickablelabel" name="register_user_lb1">
+        <property name="geometry">
+         <rect>
+          <x>76</x>
+          <y>190</y>
+          <width>65</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>注册用户</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="insertFailPage">
+       <widget class="QLabel" name="errorText_lb1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>220</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>error</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="login_again_btn1">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>70</y>
+          <width>198</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>重新登录</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="exit_btn1">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>120</y>
+          <width>198</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="avatar_lb">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>115</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/image/default_avatar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loading_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>600</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="login_avatar_lb">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>115</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/image/default_avatar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loadingGif_lb">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>270</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>clickablelabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>userName_edit</tabstop>
+  <tabstop>userPwd_edit</tabstop>
+  <tabstop>login_btn</tabstop>
+  <tabstop>rootPwd_edit</tabstop>
+  <tabstop>root_login_btn</tabstop>
+  <tabstop>login_again_btn0</tabstop>
+  <tabstop>rootName_edit</tabstop>
+  <tabstop>exit_btn0</tabstop>
+  <tabstop>login_again_btn1</tabstop>
+  <tabstop>exit_btn1</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
